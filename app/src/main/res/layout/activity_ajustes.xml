@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.AjustesActivity">
+
+    <Button
+        android:id="@+id/cambiarUsername"
+        android:layout_width="253dp"
+        android:layout_height="41dp"
+        android:background="#EFEFEF"
+        android:drawableTint="#9B9494"
+        android:foregroundTint="#7E0D0D"
+        android:text="Cambiar username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <Button
+        android:id="@+id/borrarNotas"
+        android:layout_width="253dp"
+        android:layout_height="41dp"
+        android:background="#EFEFEF"
+        android:drawableTint="#9B9494"
+        android:foregroundTint="#7E0D0D"
+        android:text="Borrar notas"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
+
+    <Button
+        android:id="@+id/EliminarCuenta"
+        android:layout_width="253dp"
+        android:layout_height="41dp"
+        android:background="#EFEFEF"
+        android:drawableTint="#9B9494"
+        android:foregroundTint="#7E0D0D"
+        android:text="Eliminar Cuenta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#F80000"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.579" />
+</androidx.constraintlayout.widget.ConstraintLayout>
