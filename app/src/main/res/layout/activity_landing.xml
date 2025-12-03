@@ -33,16 +33,5 @@
         android:layout_height="match_parent"
         android:background="@drawable/pngtree_note_wallpapers_picture_image_2124191__1_"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
-
-        <FrameLayout
-            android:id="@+id/fragmentLandingContainer"
-            android:layout_width="395dp"
-            android:layout_height="731dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        tools:layout_editor_absoluteY="0dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
