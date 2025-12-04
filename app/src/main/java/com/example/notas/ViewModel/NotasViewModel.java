@@ -3,6 +3,7 @@ package com.example.notas.ViewModel;
 import android.app.Application;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class NotasViewModel {
+public class NotasViewModel extends AndroidViewModel {
     private final MutableLiveData<List<Notas>> notas = new MutableLiveData<>();
     private final MutableLiveData<Notas> selectedNotas = new MutableLiveData<>();
     private final NotasManager NotasManager;
@@ -34,13 +35,14 @@ public class NotasViewModel {
         return notas;
     }
 
-    public void addNotas(Notas notas) {
-        List<Notas> currentList = notas.get();
-        if (currentList != null) {
-            currentList.add(notas);
-            notas.setValue(currentList);
-            NotasManager.saveNotas(currentList);
+    public void addNotas(Notas nota) {
+        List<Notas> currentList = notas.getValue();
+        if (currentList == null) {
+            currentList = new ArrayList<>();
         }
+        currentList.add(nota);
+        notas.setValue(currentList);
+        NotasManager.saveNotas(currentList);
     }
 
     public void updateNotas(Notas oldNotas, String newTitle, String newDescription, EstadoNota newStatus) {
