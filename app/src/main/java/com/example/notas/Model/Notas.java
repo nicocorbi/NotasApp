@@ -6,10 +6,10 @@ public class Notas {
     private EstadoNota colorNota;
 
 
-    public Notas(String titulo, String descripcion, EstadoNota estado) {
+    public Notas(String titulo, String descripcion, String estado) {
         this.titulo = titulo;
         this.descripcion = descripcion;
-        this.colorNota = EstadoNota.AMARILLO;
+        //this.colorNota = EstadoNota.AMARILLO;
     }
 
     public String getTitulo() {

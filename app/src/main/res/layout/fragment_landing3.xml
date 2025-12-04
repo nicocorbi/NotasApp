@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C3BFBF"
+    android:background="#00C3BFBF"
     tools:context=".View.Fragments.FragmentLanding3">
 
     <!-- TODO: Update blank fragment layout -->

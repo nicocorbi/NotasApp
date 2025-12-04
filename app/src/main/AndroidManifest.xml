@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Notas">
         <activity
-            android:name=".View.MainActivity"
+            android:name=".View.Main1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".View.LandingActivity"
             android:exported="false" />
         <activity
             android:name=".View.NotaAleatoriaActivity"
@@ -24,7 +27,7 @@
             android:name=".View.AjustesActivity"
             android:exported="false" />
         <activity
-            android:name=".View.LandingActivity"
+            android:name=".View.InicioActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

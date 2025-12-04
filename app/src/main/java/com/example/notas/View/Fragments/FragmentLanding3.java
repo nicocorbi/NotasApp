@@ -1,5 +1,6 @@
 package com.example.notas.View.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,8 +8,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.notas.R;
+import com.example.notas.View.InicioActivity;
+import com.example.notas.View.LandingActivity;
+import com.example.notas.View.Main1Activity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +66,12 @@ public class FragmentLanding3 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_landing3, container, false);
+        View view = inflater.inflate(R.layout.fragment_landing3,container,false);
+        Button button = view.findViewById(R.id.Siguiente3);
+        button.setOnClickListener(v ->{
+            Intent intent = new Intent(getActivity(), Main1Activity.class);
+            startActivity(intent);
+        });
+        return view;
     }
 }

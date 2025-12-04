@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.notas.R;
 
@@ -60,7 +61,12 @@ public class FragmentLanding2 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_landing2,container,false);
+        Button button = view.findViewById(R.id.Siguiente2);
+        button.setOnClickListener(v -> {
+            getParentFragmentManager().beginTransaction().replace(R.id.fragmentLandingContainer, new FragmentLanding3()).addToBackStack(null).commit();
+        });
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_landing2, container, false);
+        return view;
     }
 }
